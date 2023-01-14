@@ -4,6 +4,7 @@
 * 🌱 I am currently learning Ruby language with Rails framework and JavaScript.
 * 🧩 I have some experience in:
 	* 🟢 HTML & CSS 
+		* [Project #1 ](https://www.manticore.uni.lodz.pl/~mkasperk/)
 	* 🟢 SQL
 	* 🟢 C#
 
