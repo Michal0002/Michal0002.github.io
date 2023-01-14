@@ -3,7 +3,7 @@
   I love exploring and learning new things especially the things which are generally related to programming. \
    \
  🌱 I am currently learning Ruby language with Rails framework and JavaScript. \
- 🔭 I’m currently working on parking managment system with RoR+Js \
+ 🔭 I’m currently working on [parking managment system](https://github.com/Michal0002/Parking-management-system) using Ruby on Rails and Javasript \
  🧩 I have some experience in:
 * 🟢 HTML & CSS 
 	* [Solar System](https://www.manticore.uni.lodz.pl/~mkasperk/)
