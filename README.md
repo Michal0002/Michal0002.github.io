@@ -4,7 +4,14 @@
 * 🌱 I am currently learning Ruby language with Rails framework and JavaScript.
 * 🧩 I have some experience in:
 	* 🟢 HTML & CSS 
-		* [Project #1 ](https://www.manticore.uni.lodz.pl/~mkasperk/)
+		* [Solar System](https://www.manticore.uni.lodz.pl/~mkasperk/)
+		* [Project #2 ](https://www.manticore.uni.lodz.pl/~mkasperk/)
+
 	* 🟢 SQL
+		* [Car rental system](https://github.com/Michal0002/SQL-car-rental-system)
 	* 🟢 C#
+		* [Coffee shop](https://github.com/Michal0002/Csharp-coffee-shop)		
+		* [Car workshop](https://github.com/Michal0002/Csharp-car-workshop)
+		* [Work schedule](https://github.com/Michal0002/Csharp-work-schedule)
+
 
