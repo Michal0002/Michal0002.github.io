@@ -15,6 +15,7 @@
 Some of my applications:\
 	* [Solar System](https://www.manticore.uni.lodz.pl/~mkasperk/) \
 	* [Car rental system](https://github.com/Michal0002/SQL-car-rental-system) \
+	* [Weather app](https://github.com/Michal0002/WeatherApp) \
 	* [Coffee shop](https://github.com/Michal0002/Csharp-coffee-shop) \
 	* [Car workshop](https://github.com/Michal0002/Csharp-car-workshop) \
 	* [Work schedule](https://github.com/Michal0002/Csharp-work-schedule) 
