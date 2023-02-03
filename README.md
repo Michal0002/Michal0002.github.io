@@ -13,6 +13,7 @@
 
 
 Some of my applications:\
+	* [Weather APP ](https://github.com/Michal0002/WeatherApp) \
 	* [Solar System](https://www.manticore.uni.lodz.pl/~mkasperk/) \
 	* [Car rental system](https://github.com/Michal0002/SQL-car-rental-system) \
 	* [Weather app](https://github.com/Michal0002/WeatherApp) \
