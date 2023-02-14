@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Michał Kasperek - Portfolio </title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">O mnie</a></li>
+                <li><a href="#work">Projekty</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <h1>O mnie</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum urna quis lectus varius, vel suscipit odio tristique.</p>
+        </section>
+        <section id="work">
+            <h1>Projekty</h1>
+            <ul>
+                <li>
+                    <h2>Projekt 1</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </li>
+                <li>
+                    <h2>Projekt 2</h2>
+                    <p>Sed dictum urna quis lectus varius, vel suscipit odio tristique.</p>
+                </li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h1>Kontakt</h1>
+            <form action="send_email.php" method="post">
+                <label for="name">Imię:</label>
+                <input type="text" id="name" name="name">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email">
+                <label for="message">Wiadomość:</label>
+                <textarea id="message" name="message"></textarea>
+                <input type="submit" value="Wyślij">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Moje portfolio</p>
+    </footer>
+</body>
+
+</body>
+
+</html>
