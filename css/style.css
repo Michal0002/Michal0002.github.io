@@ -3,6 +3,7 @@ body {
     padding: 0;
     background-color: #000000;
     color: white;
+    overflow: hidden;
 }
 
 nav {
