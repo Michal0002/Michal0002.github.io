@@ -41,3 +41,59 @@ nav li a:hover {
     color: #fdc500;
     border-bottom: 1px solid #fdc500;
 }
+
+nav {
+    background-color: #050609;
+    border-bottom: 1px solid #fdc500;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li {
+    justify-content: center;
+    float: left;
+    flex-basis: 25%;
+    width: 25%;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    justify-content: center;
+    font-weight: bold;
+}
+
+nav li a:hover {
+    color: #fdc500;
+    border-bottom: 1px solid #fdc500;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#about {}
+
+#skills {}
+
+#projects {}
+
+#contact {}
