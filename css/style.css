@@ -4,17 +4,21 @@ body {
     background-color: #000000;
     color: white;
     overflow: hidden;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1.5em;
 }
 
 nav {
     background-color: #050609;
-    box-shadow: #fdc500 0px 1px 5px;
+    border-bottom: 1px solid #fdc500;
     display: flex;
     justify-content: center;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 999;
+    border-image: linear-gradient(to right, #FFDB58, red) 1;
+
 }
 
 nav ul {
@@ -29,7 +33,7 @@ nav ul {
 nav li {
     justify-content: center;
     display: flex;
-    flex-basis: 25%;
+    flex-basis: 20%;
     flex-grow: 1;
 }
 
@@ -48,7 +52,7 @@ nav li a:hover {
 }
 
 nav .nav-ul a.active {
-    color: red;
+    color: #fdc500;
 }
 
 section {
@@ -59,8 +63,62 @@ section {
     flex-direction: column;
 }
 
-#about {}
+#home{}
 
+.mypicture {
+    width: 15%;
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+  }
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0 rgba(255, 255, 0, 0.4);
+    }
+    100% {
+      box-shadow: 0 0 0 30px rgba(255, 255, 0, 0);
+    }
+  }
+.span_text {
+    color: #fdc500;
+}
+h2 span {
+    background-image: linear-gradient(to right, darkgoldenrod, #FFDB58);
+    border-radius: 50px;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+#home ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+#home li {
+    justify-content: center;
+    display: flex;
+    flex-basis: 20%;
+    flex-grow: 1;
+}
+
+.btn-download {
+    border: 2px solid #FFC107;
+    border-radius: 20px;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #FFC107;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .btn-download:hover {
+    background-image: linear-gradient(to right, #FFDB58, darkgoldenrod);
+    color: white;
+  }
+#about {
+
+}
 #skills {}
 
 #projects {}
