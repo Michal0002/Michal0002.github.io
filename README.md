@@ -1,3 +1,5 @@
+permalink: /index.html
+
 # Hi there 👋 
   My name is Michał and I came from Poland, \
   I love exploring and learning new things especially the things which are generally related to programming. \
