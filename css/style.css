@@ -45,10 +45,15 @@ nav li a {
     text-decoration: none;
     justify-content: center;
     font-weight: bold;
+    width: 100%;
 }
+nav li:hover {
+    background-color: #111111	;
 
+}
 nav li a:hover {
     color: #fdc500;
+
 }
 
 nav .nav-ul a.active {
@@ -60,10 +65,12 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+
 }
 
-#home{}
+#home{
+    flex-direction: column;
+}
 
 .mypicture {
     width: 15%;
@@ -81,7 +88,7 @@ section {
 .span_text {
     color: #fdc500;
 }
-h2 span {
+#home h2 span {
     background-image: linear-gradient(to right, darkgoldenrod, #FFDB58);
     border-radius: 50px;
     color: transparent;
@@ -116,8 +123,36 @@ h2 span {
     background-image: linear-gradient(to right, #FFDB58, darkgoldenrod);
     color: white;
   }
-#about {
 
+  
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+#about {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .about_experience,
+  .about_description {
+    width: 20%;
+    padding: 0 20px;
+  }
+  
+  .about_experience {
+    order: 1;
+  }
+  
+  .about_description {
+    order: 2;
+  }
+#about span {
+    background-image: linear-gradient(to right, darkgoldenrod, #FFDB58);
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 #skills {}
 
