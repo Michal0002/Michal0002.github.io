@@ -130,11 +130,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-#about {
-    display: flex;
-    flex-wrap: wrap;
+    text-align: justify;
 }
 
 .about_experience,
@@ -184,7 +180,7 @@ li span.square {
     width: 120px;
     height: 120px;
     margin-right: 25px;
-    background-color: #ccc;
+    background-image: linear-gradient(to right, darkgoldenrod, #FFDB58);
     border-radius: 20px;
     margin-bottom: 5px;
     text-align: center;
@@ -198,19 +194,33 @@ li span.square {
     background-image: linear-gradient(to right, darkgoldenrod, #FFDB58);
     display: flex;
     align-items: center;
-}
-
-.job-title {
-    display: flex;
-    align-items: center;
+    margin: auto;
+    padding: 0;
+    text-align: center;
+    color: black;
+    border: 1px solid #FFDB58;
+    border-radius: 20%;
 }
 
 .job-description {
-    display: none;
+    text-align: center;
 }
 
-.job-info:hover .job-description {
-    display: block;
+.job-info {
+    max-width: 35%;
+}
+
+.job-tasks {
+    margin: auto;
+    padding-left: 20px;
+    border-left: 1px dotted white;
+    width: 25%;
+    max-width: 30%;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
 }
 
 #skills {}
@@ -218,3 +228,9 @@ li span.square {
 #projects {}
 
 #contact {}
+
+@media only screen and (max-width: 1366px) {
+    body {
+        font-size: 1em;
+    }
+}
