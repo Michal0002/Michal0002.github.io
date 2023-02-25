@@ -22,7 +22,6 @@ navLinks.forEach((link) => {
                 otherLink.classList.remove('active');
             }
         });
-
         // Przewiń do sekcji z animacją
         targetSection.scrollIntoView({ behavior: 'smooth' });
     });

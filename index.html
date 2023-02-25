@@ -27,29 +27,29 @@
             <img src="images/image_of_me.jpg" alt="My picture" class="mypicture">
             <h2><span> I'm </span>Michał </h2>
             <p> I'm passionate in web programming </p>
-            <br/>
             <a href="https://github.com/Michal0002" target="_blank" style="text-decoration: none; color: white;"> Here is my GitHub profile: <img src="images/github_logo.png" alt="GitHub logo" width="40px"> </a>
-            <br/>
-            <a href="ścieżka/do/cv.pdf" download target="_blank" class="btn-download">Pobierz CV</a>
+            <a href="ścieżka/do/cv.pdf" download target="_blank" class="btn-download">Download CV</a>
         </section>
 
         <section id="about">
             <div class="about_experience">
-                <h2>My <span class="span_experience">experience</span></h2>
+                <h2><img src="images/my_experience_icon.png" alt="My picture" class="experience_pic">My <span class="span_experience">experience</span></h2>
                 <ul>
                     <li>
                         <div class="square-container">
-                            <span class="square">01/2023 – <br>present</span>
+                            <span class="square" id="current_job">01/2023 – <br>present</span>
                             <div class="job-info">
                                 <div class="job-title">
                                     <span class="job">BSH - Dishwasher Factory</span>
                                 </div>
                                 <div class="job-description">
                                     <p> Quality Management Department (Internship)</p>
-                                    <button id="job-button" onclick="toggleJobDetails(this)">Show more</button>
+                                    <button id="job-button" onclick="toggleJobDetails(this)" class="btn-show_more">Show more</button>
                                 </div>
                             </div>
                             <div class="job-tasks">
+                                <p style="color:grey; font-size:smaller;"> Duties:</p>
+
                                 <p class="job-details hidden"> Daily working with Excel (macros), TeamCenter </p>
                             </div>
                         </div>
@@ -64,10 +64,11 @@
                                 </div>
                                 <div class="job-description ">
                                     <p>Ruby on Rails (Internship)</p>
-                                    <button onclick="toggleJobDetails(this)">Show more</button>
+                                    <button onclick="toggleJobDetails(this)" class="btn-show_more">Show more</button>
                                 </div>
                             </div>
                             <div class="job-tasks">
+                                <p style="color:grey; font-size:smaller;"> Duties:</p>
                                 <p id="job-details" class="job-details hidden"> Familiarization with Ruby and the Rails framework and support in creating code </p>
 
                             </div>
@@ -84,11 +85,12 @@
                                 </div>
                                 <div class="job-description ">
                                     <p>Service Assistant</p>
-                                    <button onclick="toggleJobDetails(this)">Show more</button>
+                                    <button onclick="toggleJobDetails(this)" class="btn-show_more">Show more</button>
                                 </div>
                             </div>
                             <div class="job-tasks">
-                                <p id="job-details" class="job-details hidden"> Computer hardware repair </p>
+                                <p style="color:grey; font-size:smaller;"> Duties:</p>
+                                <p id="job-details" class="job-details hidden">Computer hardware repair </p>
                             </div>
 
                         </div>
@@ -97,7 +99,7 @@
                 </ul>
             </div>
             <div class="about_description ">
-                <h2> <span class="span_about ">About</span> me</h2>
+                <h2> <img src="images/about_me_icon.jpg" alt="My picture" class="about_me_pic"> <span class="span_about ">About</span> me</h2>
                 <p>I am a third-year student of Economic Computer Science at the University of Łódź. I am a precise person and I always try to finish everything so that every task entrusted to me is completed to the end. I am looking for a place where I
                     can improve by learning new things under the supervision of professionals, so that in the future I can become a valuable member of the team. Currently I am focusing on learning front-end development.</p>
             </div>
@@ -105,8 +107,57 @@
 
 
         <section id="skills">
-            <h1>Skills</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum urna quis lectus varius, vel suscipit odio tristique.</p>
+            <div class="left-column">
+
+                <div class="language-progress">
+                    <span>HTML+CSS</span>
+                    <progress value="70" max="100"></progress>
+                    <span>70%</span>
+                    <button onclick="showDetails('html')">Show details</button>
+                </div>
+
+                <div class="language-progress">
+                    <span>Ruby</span>
+                    <progress value="60" max="100"></progress>
+                    <span>60%</span>
+                    <button onclick="showDetails('html')">Show details</button>
+                </div>
+                <br>
+                <div class="language-progress">
+                    <span>C#</span>
+                    <progress value="50" max="100"></progress>
+                    <span>50%</span>
+                    <button onclick="showDetails('html')">Show details</button>
+
+                </div>
+                <div class="language-progress">
+                    <span>SQL</span>
+                    <progress value="50" max="100"></progress>
+                    <span>50%</span>
+                    <button onclick="showDetails('html')">Show details</button>
+                </div>
+                <div class="language-progress">
+                    <span>Javascript</span>
+                    <progress value="20" max="100"></progress>
+                    <span>20%</span>
+                    <button onclick="showDetails('html')">Show details</button>
+                </div>
+            </div>
+            <div class="right-column">
+                <div class="tool-icon">
+                    <img src="images/excel.png" alt="Excel">
+                </div>
+                <div class="tool-icon">
+                    <img src="images/powerpoint.png" alt="PowerPoint">
+                </div>
+                <div class="tool-icon">
+                    <img src="images/photoshop.png" alt="Photoshop">
+                </div>
+                <div class="tool-icon">
+                    <img src="images/teamcenter.png" alt="TeamCenter">
+                </div>
+            </div>
+
         </section>
 
         <section id="projects">
