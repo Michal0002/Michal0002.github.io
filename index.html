@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="active_a.js" defer></script>
     <script src="js/show_more.js" defer></script>
+    <script src="js/unhide_skills.js" defer></script>
+
+
 </head>
 
 <body>
@@ -26,9 +29,9 @@
             <h1> Hello World!</h1>
             <img src="images/image_of_me.jpg" alt="My picture" class="mypicture">
             <h2><span> I'm </span>Michał </h2>
-            <p> I'm passionate in web programming </p>
+            <p> I want to became a web developer in the future </p>
             <a href="https://github.com/Michal0002" target="_blank" style="text-decoration: none; color: white;"> Here is my GitHub profile: <img src="images/github_logo.png" alt="GitHub logo" width="40px"> </a>
-            <a href="ścieżka/do/cv.pdf" download target="_blank" class="btn-download">Download CV</a>
+            <a href="ścieżka/do/cv.pdf" download target="_blank" class="btn-download">Download my CV</a>
         </section>
 
         <section id="about">
@@ -60,7 +63,7 @@
                             <span class="square "> 07/2022 – 01/2023 </span>
                             <div class="job-info ">
                                 <div class="job-title ">
-                                    <span class="job">Mayka.pl – Laboratium Reklamy</span>
+                                    <span class="job">Mayka.pl – Laboratorium Reklamy</span>
                                 </div>
                                 <div class="job-description ">
                                     <p>Ruby on Rails (Internship)</p>
@@ -107,71 +110,97 @@
 
 
         <section id="skills">
-            <div class="left-column">
-
-                <div class="language-progress">
-                    <span>HTML+CSS</span>
-                    <progress value="70" max="100"></progress>
-                    <span>70%</span>
-                    <button onclick="showDetails('html')">Show details</button>
+            <div class="skills-left-column">
+                <h3> <img src="images/tools_ic.png" alt="tools" class="tool-img"> Program<span class="span_about ">ming</span> languages</h3>
+                <div class="languages">
+                    <button class="button btn-show_more" data-description="HTML - I am familiar with structuring and organizing content with HTML. I have experience with CSS frameworks, such as Bootstrap and Skeleton. I can create responsive web pages using HTML and CSS.">HTML and CSS</button>
+                    <button class="button btn-show_more" data-description="ROR - I can create web applications in Ruby using Rails framework. I know the basic constructions of the language, such as variables, loops, functions and classes, and I can use them in practice. I understand the principles of object-oriented programming. I know how to use databases such as PostgreSQL or MySQL. I also know the basics of testing Rails applications, including tools like RSpec and Capybara, for writing unit and integration tests, lists, tables, and forms.">Ruby on Rails</button>
+                    <button class="button btn-show_more" data-description="SQL - I know how to work with relational databases, write SQL queries(also triggers,functions) and design database schema. ">SQL</button>
+                    <button class="button btn-show_more" data-description="C# - I have some experience in working with Web Forms and Windows forms, so I can develop Windows desktop applications using C# .NET framework.">C#</button>
+                    <button class="button btn-show_more" data-description="JS - I am at the stage of self-learning this language. I have created few scripts on this website.">Javascript</button>
                 </div>
-
-                <div class="language-progress">
-                    <span>Ruby</span>
-                    <progress value="60" max="100"></progress>
-                    <span>60%</span>
-                    <button onclick="showDetails('html')">Show details</button>
-                </div>
-                <br>
-                <div class="language-progress">
-                    <span>C#</span>
-                    <progress value="50" max="100"></progress>
-                    <span>50%</span>
-                    <button onclick="showDetails('html')">Show details</button>
-
-                </div>
-                <div class="language-progress">
-                    <span>SQL</span>
-                    <progress value="50" max="100"></progress>
-                    <span>50%</span>
-                    <button onclick="showDetails('html')">Show details</button>
-                </div>
-                <div class="language-progress">
-                    <span>Javascript</span>
-                    <progress value="20" max="100"></progress>
-                    <span>20%</span>
-                    <button onclick="showDetails('html')">Show details</button>
+                <div class="descriptions">
+                    <span class="description">  </span>
                 </div>
             </div>
-            <div class="right-column">
-                <div class="tool-icon">
-                    <img src="images/excel.png" alt="Excel">
+
+            <div class="skills-right-column">
+                <div class="other_skills">
+                    <h3> <img src="images/tools_ic.png" alt="tools" class="tool-img"> Familiar<span class="span_about ">with</span> </h3>
                 </div>
-                <div class="tool-icon">
-                    <img src="images/powerpoint.png" alt="PowerPoint">
+                <div class="skills-container">
+                    <div class="skills-column">
+                        <div class="tool-icon ">
+                            <img src="images/tools/linux.png " alt="Linux" width="150px">
+                        </div>
+                        <div class="tool-icon ">
+                            <img src="images/tools/visual.png " alt="VisualStudio" width="150px">
+                        </div>
+                    </div>
+                    <div class="skills-column">
+                        <div class="tool-icon ">
+                            <img src="images/tools/excel.png " alt="Excel " width="150px">
+                        </div>
+                        <div class="tool-icon ">
+                            <img src="images/tools/photoshop.png " alt="Photoshop " width="150px">
+                        </div>
+                    </div>
+                    <div class="skills-column">
+                        <div class="tool-icon ">
+                            <img src="images/tools/ror.png " alt="RubyOnRails " width="150px">
+                        </div>
+                        <div class="tool-icon ">
+                            <img src="images/tools/teamcenter.png " alt="TeamCenter " width="150px">
+                        </div>
+                    </div>
                 </div>
-                <div class="tool-icon">
-                    <img src="images/photoshop.png" alt="Photoshop">
-                </div>
-                <div class="tool-icon">
-                    <img src="images/teamcenter.png" alt="TeamCenter">
-                </div>
-            </div>
+
 
         </section>
 
         <section id="projects">
-            <h1>Projects</h1>
-            <ul>
-                <li>
-                    <h2>Projekt 1</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </li>
-                <li>
-                    <h2>Projekt 2</h2>
-                    <p>Sed dictum urna quis lectus varius, vel suscipit odio tristique.</p>
-                </li>
-            </ul>
+            <div class="projects-container">
+                <div class="projects-slideshow">
+                    <div class="project ">
+                        <img src="project1.jpg" alt="Project 1">
+                        <div class="project-info ">
+                            <h3>Project 1</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p>Technologies used: HTML, CSS, JavaScript</p>
+                        </div>
+                    </div>
+                    <div class="project ">
+                        <img src="project2.jpg " alt="Project 2 ">
+                        <div class="project-info ">
+                            <h3>Project 2</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p>Technologies used: HTML, CSS, JavaScript</p>
+                        </div>
+                    </div>
+                    <div class="project ">
+                        <img src="project3.jpg " alt="Project 3 ">
+                        <div class="project-info ">
+                            <h3>Project 3</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p>Technologies used: HTML, CSS, JavaScript</p>
+                        </div>
+                    </div>
+                    <div class="project ">
+                        <img src="project4.jpg " alt="Project 4 ">
+                        <div class="project-info ">
+                            <h3>Project 4</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p>Technologies used: HTML, CSS, JavaScript</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="projects-navigation ">
+                    <button class="prev-button ">&#8249;</button>
+                    <button class="next-button ">&#8250;</button>
+                </div>
+            </div>
+
+
         </section>
 
         <section id="contact">
@@ -192,8 +221,6 @@
     <footer>
         <p>&copy; 2023 Moje portfolio</p>
     </footer>
-</body>
-
 </body>
 
 </html>
