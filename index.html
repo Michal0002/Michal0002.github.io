@@ -30,9 +30,9 @@
             <img src="images/image_of_me.jpg" alt="My picture" class="mypicture">
             <h2><span> I'm </span>Michał </h2>
             <p> I want to became a web developer in the future </p>
-            <p>Here is my GitHub and GitLab profile with all of my projects:
-                <a href="https://github.com/Michal0002" target="_blank" style="text-decoration: none; color: white;"><img src="images/github_logo.png" alt="GitHub logo" width="40px"> </a>
-                <a href="https://gitlab.com/users/Michal_0002/contributed" target="_blank" style="text-decoration: none; color: white;"> <img src="images/gitlab_logo.png" alt="Gitlab logo" width="40px"> </a>
+            <p>
+                <a href="https://github.com/Michal0002" target="_blank" style="text-decoration: none; color: white;"><img src="images/github_logo.png" alt="GitHub logo" style="width: 40px;"> </a>
+                <a href="https://gitlab.com/users/Michal_0002/contributed" target="_blank" style="text-decoration: none; color: white;"> <img src="images/gitlab_logo.png" alt="Gitlab logo" style="width: 40px;"> </a>
             </p>
             <a href="files/Michal Kasperek - CV with resume.pdf" download target="_blank" class="btn-download">Download my CV</a>
         </section>
@@ -74,7 +74,7 @@
                             </div>
                             <div class="job-tasks">
                                 <p style="color:grey; font-size:smaller;"> Duties:</p>
-                                <p id="job-details" class="job-details hidden"> Familiarization with Ruby and the Rails framework and support in creating code </p>
+                                <p class="job-details hidden"> Familiarization with Ruby and the Rails framework and support in creating code </p>
 
                             </div>
 
@@ -95,7 +95,7 @@
                             </div>
                             <div class="job-tasks">
                                 <p style="color:grey; font-size:smaller;"> Duties:</p>
-                                <p id="job-details" class="job-details hidden">Computer hardware repair </p>
+                                <p class="job-details hidden">Computer hardware repair </p>
                             </div>
 
                         </div>
@@ -133,29 +133,33 @@
                 <div class="skills-container">
                     <div class="skills-column">
                         <div class="tool-icon ">
-                            <img src="images/tools/linux.png " alt="Linux" width="150px">
+                            <img src="images/tools/linux.png " alt="Linux" style="width: 150px">
                         </div>
                         <div class="tool-icon ">
-                            <img src="images/tools/visual.png " alt="VisualStudio" width="150px">
+                            <img src="images/tools/visual.png " alt="VisualStudio" style="width: 150px">
                         </div>
                     </div>
+
                     <div class="skills-column">
                         <div class="tool-icon ">
-                            <img src="images/tools/excel.png " alt="Excel " width="150px">
+                            <img src="images/tools/excel.png " alt="Excel " style="width: 150px">
                         </div>
                         <div class="tool-icon ">
-                            <img src="images/tools/photoshop.png " alt="Photoshop " width="150px">
+                            <img src="images/tools/photoshop.png " alt="Photoshop " style="width: 150px">
                         </div>
                     </div>
+
                     <div class="skills-column">
                         <div class="tool-icon ">
-                            <img src="images/tools/ror.png " alt="RubyOnRails " width="150px">
+                            <img src="images/tools/ror.png " alt="RubyOnRails " style="width: 150px">
                         </div>
                         <div class="tool-icon ">
-                            <img src="images/tools/teamcenter.png " alt="TeamCenter " width="150px">
+                            <img src="images/tools/teamcenter.png " alt="TeamCenter " style="width: 150px">
                         </div>
                     </div>
+
                 </div>
+            </div>
         </section>
 
         <section id="projects">
@@ -165,8 +169,8 @@
                         <div class="project-info">
                             <h3>Parking Management System</h3>
                             <div class="project-img">
-                                <img src="images/projects/project1-1.png" alt="Project 1-1" width="350px">
-                                <img src="images/projects/project1-2.png" alt="Project 1-2" width="350px">
+                                <img src="images/projects/project1-1.png" alt="Project 1-1" style="width: 350px;">
+                                <img src="images/projects/project1-2.png" alt="Project 1-2" style="width: 350px;">
                             </div>
 
                             <p class="project-description">The application created for the needs of managing parking spaces in a certain company.</p>
@@ -178,7 +182,7 @@
                         <div class="project-info">
                             <h3>WtwApp</h3>
                             <div class="project-img">
-                                <img src="images/projects/project3-1.png" alt="Project 3-1" width="280px">
+                                <img src="images/projects/project3-1.png" alt="Project 3-1" style="width: 280px;">
                             </div>
                             <p class="project-description">Using this application, user can enter the city and then receive basic information about the weather.</p>
                             <p><span class="tech-span">Technologies used: </span> Ruby with Rails framework, JavaScript with librares</p>
@@ -189,8 +193,8 @@
                         <div class="project-info">
                             <h3>4Mem everyday</h3>
                             <div class="project-img">
-                                <img src="images/projects/project2-1.png" alt="Project 2-1" width="350px">
-                                <img src="images/projects/project2-2.png" alt="Project 2-2" width="350px">
+                                <img src="images/projects/project2-1.png" alt="Project 2-1" style="width: 350px;">
+                                <img src="images/projects/project2-2.png" alt="Project 2-2" style="width: 350px;">
                             </div>
                             <p class="project-description">An application that is designed to share memes, a user who is logged in to the system can add their own memes, comment on other users memes.</p>
                             <p><span class="tech-span">Technologies used: </span> HTML, CSS, JavaScript</p>
@@ -205,7 +209,7 @@
         <section id="contact">
             <form action="mailto:michal.kasperek2000@wp.pl" method="post" enctype="text/plain">
 
-                <label for="subject">Title:</label>
+                <label for="title">Title:</label>
                 <input type="text" id="title" name="title" required>
 
                 <label for="email">E-mail:</label>
