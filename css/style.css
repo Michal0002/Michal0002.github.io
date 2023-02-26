@@ -84,6 +84,7 @@ section {
     justify-content: center;
     align-items: center;
     overflow: auto;
+    position: relative;
 }
 
 #home {
@@ -413,7 +414,7 @@ li span.square:hover {
 }
 
 #projects {
-    background-color: rgb(52, 51, 49);
+    background: none repeat;
 }
 
 .project {
@@ -512,6 +513,13 @@ textarea {
 #contact button:hover {
     background-image: linear-gradient(to right, #FFDB58, darkgoldenrod);
     color: white;
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+    background-color: #333;
+    color: #fff;
 }
 
 @media only screen and (max-width: 1366px) {
