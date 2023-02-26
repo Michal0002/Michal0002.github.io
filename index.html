@@ -8,6 +8,7 @@
     <script src="active_a.js" defer></script>
     <script src="js/show_more.js" defer></script>
     <script src="js/unhide_skills.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 
 </head>
@@ -30,8 +31,11 @@
             <img src="images/image_of_me.jpg" alt="My picture" class="mypicture">
             <h2><span> I'm </span>Michał </h2>
             <p> I want to became a web developer in the future </p>
-            <a href="https://github.com/Michal0002" target="_blank" style="text-decoration: none; color: white;"> Here is my GitHub profile: <img src="images/github_logo.png" alt="GitHub logo" width="40px"> </a>
-            <a href="ścieżka/do/cv.pdf" download target="_blank" class="btn-download">Download my CV</a>
+            <p>Here is my GitHub and GitLab profile with all of my projects:
+                <a href="https://github.com/Michal0002" target="_blank" style="text-decoration: none; color: white;"><img src="images/github_logo.png" alt="GitHub logo" width="40px"> </a>
+                <a href="https://gitlab.com/users/Michal_0002/contributed" target="_blank" style="text-decoration: none; color: white;"> <img src="images/gitlab_logo.png" alt="Gitlab logo" width="40px"> </a>
+            </p>
+            <a href="files/Michal Kasperek - CV with resume.pdf" download target="_blank" class="btn-download">Download my CV</a>
         </section>
 
         <section id="about">
@@ -52,7 +56,6 @@
                             </div>
                             <div class="job-tasks">
                                 <p style="color:grey; font-size:smaller;"> Duties:</p>
-
                                 <p class="job-details hidden"> Daily working with Excel (macros), TeamCenter </p>
                             </div>
                         </div>
@@ -154,69 +157,72 @@
                         </div>
                     </div>
                 </div>
-
-
         </section>
 
         <section id="projects">
             <div class="projects-container">
                 <div class="projects-slideshow">
-                    <div class="project ">
-                        <img src="project1.jpg" alt="Project 1">
-                        <div class="project-info ">
-                            <h3>Project 1</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            <p>Technologies used: HTML, CSS, JavaScript</p>
+                    <div class="project">
+                        <div class="project-info">
+                            <h3>Parking Management System</h3>
+                            <div class="project-img">
+                                <img src="images/projects/project1-1.png" alt="Project 1-1" width="350px">
+                                <img src="images/projects/project1-2.png" alt="Project 1-2" width="350px">
+                            </div>
+
+                            <p class="project-description">The application created for the needs of managing parking spaces in a certain company.</p>
+                            <p><span class="tech-span">Technologies used: </span> Ruby with Rails framework, JavaScript</p>
+                            <p> <span class="tech-span">Repo: </span> <a href="https://github.com/Michal0002/Parking-management-system" target="_blank"> Link</a> </p>
                         </div>
                     </div>
-                    <div class="project ">
-                        <img src="project2.jpg " alt="Project 2 ">
-                        <div class="project-info ">
-                            <h3>Project 2</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            <p>Technologies used: HTML, CSS, JavaScript</p>
+                    <div class="project">
+                        <div class="project-info">
+                            <h3>WtwApp</h3>
+                            <div class="project-img">
+                                <img src="images/projects/project3-1.png" alt="Project 3-1" width="280px">
+                            </div>
+                            <p class="project-description">Using this application, user can enter the city and then receive basic information about the weather.</p>
+                            <p><span class="tech-span">Technologies used: </span> Ruby with Rails framework, JavaScript with librares</p>
+                            <p> <span class="tech-span">Repo: </span> <a href="https://github.com/Michal0002/WeatherApp" target="_blank"> Link</a> </p>
                         </div>
                     </div>
-                    <div class="project ">
-                        <img src="project3.jpg " alt="Project 3 ">
-                        <div class="project-info ">
-                            <h3>Project 3</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            <p>Technologies used: HTML, CSS, JavaScript</p>
+                    <div class="project">
+                        <div class="project-info">
+                            <h3>4Mem everyday</h3>
+                            <div class="project-img">
+                                <img src="images/projects/project2-1.png" alt="Project 2-1" width="350px">
+                                <img src="images/projects/project2-2.png" alt="Project 2-2" width="350px">
+                            </div>
+                            <p class="project-description">An application that is designed to share memes, a user who is logged in to the system can add their own memes, comment on other users memes.</p>
+                            <p><span class="tech-span">Technologies used: </span> HTML, CSS, JavaScript</p>
+                            <p> <span class="tech-span">Repo: </span> <a href="https://gitlab.com/glowna/projekt-agregator-memow" target="_blank"> Link</a> </p>
+
                         </div>
                     </div>
-                    <div class="project ">
-                        <img src="project4.jpg " alt="Project 4 ">
-                        <div class="project-info ">
-                            <h3>Project 4</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            <p>Technologies used: HTML, CSS, JavaScript</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="projects-navigation ">
-                    <button class="prev-button ">&#8249;</button>
-                    <button class="next-button ">&#8250;</button>
                 </div>
             </div>
-
-
         </section>
 
         <section id="contact">
-            <h1>Kontakt</h1>
-            <form action="send_email.php " method="post ">
-                <label for="name ">Imię:</label>
-                <input type="text " id="name " name="name ">
-                <label for="email ">E-mail:</label>
-                <input type="email " id="email " name="email ">
-                <label for="message ">Wiadomość:</label>
-                <textarea id="message " name="message "></textarea>
-                <input type="submit " value="Wyślij ">
+            <form action="mailto:michal.kasperek2000@wp.pl" method="post" enctype="text/plain">
+
+                <label for="subject">Title:</label>
+                <input type="text" id="title" name="title" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Send</button>
             </form>
+
         </section>
 
-
+        <script>
+        </script>
     </main>
     <footer>
         <p>&copy; 2023 Moje portfolio</p>
