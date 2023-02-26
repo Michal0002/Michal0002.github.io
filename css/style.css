@@ -114,7 +114,6 @@ section {
     background-image: linear-gradient(to right, darkgoldenrod, #FFDB58);
     border-radius: 50px;
     color: transparent;
-    -webkit-background-clip: text;
     background-clip: text;
 }
 
@@ -205,7 +204,7 @@ section {
 .about_description {
     color: black;
     background-color: white;
-    border: 1px solid white;
+    border: 1px solid black;
     border-radius: 2%;
     order: 2;
 }
